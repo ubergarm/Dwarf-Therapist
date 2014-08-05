@@ -24,4 +24,4 @@ moc_*.h
 translations/qtmobility_untranslated.ts
 translations/qtmobility_*.qm
 
-*.pro.user*
+*.pro.user
