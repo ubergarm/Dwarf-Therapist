@@ -216,7 +216,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->cb_group_by->addItem(tr("Migration Wave"),DwarfModel::GB_MIGRATION_WAVE);
     ui->cb_group_by->addItem(tr("Military Status"),DwarfModel::GB_MILITARY_STATUS);
     ui->cb_group_by->addItem(tr("Profession"), DwarfModel::GB_PROFESSION);
-    ui->cb_group_by->addItem(tr("Race"), DwarfModel::GB_RACE);    
+    ui->cb_group_by->addItem(tr("Race"), DwarfModel::GB_RACE);
     ui->cb_group_by->addItem(tr("Skill Rust"), DwarfModel::GB_SKILL_RUST);
     ui->cb_group_by->addItem(tr("Squad"), DwarfModel::GB_SQUAD);
     ui->cb_group_by->addItem(tr("Total Assigned Labors"),DwarfModel::GB_ASSIGNED_LABORS);
@@ -870,8 +870,7 @@ void MainWindow::go_to_new_issue() {
 }
 
 void MainWindow::open_help(){
-    QString manual_path = QString("file://%1/Therapist Manual.pdf").arg(QCoreApplication::applicationDirPath());
-    QDesktopServices::openUrl(QUrl::fromLocalFile(manual_path));
+    QDesktopServices::openUrl("share:doc/Therapist Manual.pdf");
 }
 
 QToolBar *MainWindow::get_toolbar() {
